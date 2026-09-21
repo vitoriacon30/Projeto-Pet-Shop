@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Pet-Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Pet Shop Mundo Animal</h1>
+    </header>
+
+    <main>
+
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">HOME</a>
+                </li>
+                <li>
+                    <a href="cadastro.html">CADASTRO</a>
+                </li>
+            </ul>
+        </nav>
+
+        <p id="mensagem"></p>
+
+        <form id="formProduto">
+
+            <div class="campo">
+                <label for="nome">Nome do Tutor</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Ex: Marcella"
+                >
+            </div>
+
+            <div class="campo">
+                <label for="nomePet">Nome do Pet</label>
+                <input
+                    type="text"
+                    id="nomePet"
+                    name="nomePet"
+                    placeholder="Ex: Bob"
+                >
+            </div>
+
+            <div class="campo">
+                <label for="raca">Raça</label>
+                <input
+                    type="text"
+                    id="raca"
+                    name="raca"
+                    placeholder="Ex: Vira-lata"
+                >
+            </div>
+
+            
+
+            <div class="campo">
+                <label for="especie">Espécie</label>
+                <input
+                    type="text"
+                    id="especie"
+                    name="especie"
+                    placeholder="Ex: Gato"
+                >
+            </div>
+
+            <div class="campo">
+                <label for="categoria">Categoria</label>
+
+                <select name="categoria" id="categoria">
+                    <option value="">Selecione uma Categoria</option>
+                    <option value="Banho Simples">Banho Simples</option>
+                    <option value="Banho Completo">Banho Completo</option>
+                    <option value="Tosa Simples">Tosa Simples</option>
+                    <option value="Tosa Completa">Tosa Completa</option>
+                    <option value="Vacinação">Vacinação</option>
+                </select>
+            </div>
+
+            <button type="submit" class="botaoSalvar">
+                Salvar Informações
+            </button>
+
+        </form>
+
+    </main>
+
+    <footer>
+        <p>Pet Shop Mundo Animal</p>
+    </footer>
+
+    <script src="cadastro.js"></script>
+
+</body>
+</html>
