@@ -12,8 +12,33 @@ body {
 
 main {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
 }
+
+table {
+    margin-top: 20px;
+    width: 60%;
+    border-collapse: collapse ;
+}
+
+td {
+    text-align: center;
+}
+
+.acoes {
+    text-align: center;
+}
+
+thead {
+    background-color: aqua;
+}
+
+
+
+
 header {
     display: flex;
     align-items: center;
@@ -24,7 +49,7 @@ header {
 }
 
 h1 {  
-    color: azure;
+    color: rgb(0, 0, 0);
 }
 ul {
     display: flex;
@@ -35,7 +60,6 @@ ul {
 
 li {
     list-style: none;
-    padding: 10px;
 
 }
  
@@ -46,32 +70,148 @@ li:hover{
 
 
 a {
+    display: block;
     text-decoration: none;
     color: black;
+    padding: 10px 20px;
 }
 
 a:hover {
-    color: aqua;
+    color: black;
+    background-color: rgb(0, 255, 255);
+}
+.botaoExcluir {
+    background-color: rgb(244, 241, 241);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
+   
 }
 
+.botaoExcluir:hover {
+    background-color: aqua;
+    cursor: pointer;
+}
 
+.botaoEditar {
+    background-color: rgb(244, 241, 241);
+    color: rgb(0, 0, 0);
+    padding: 5px;
+    font-size: 12px;
+    border-radius: 5px;
+    border: none;
 
+}
 
+.botaoEditar:hover {
 
-
-
-
-
-
-
-
-
-
+    background-color: aqua;
+    cursor: pointer;
+}
+    
+form {
+    background-color: aqua;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;  
+    margin-block: 20px;
+}
 
 footer {
     background-color: aqua;
-    color: aliceblue;
+    color: rgb(0, 0, 0);
     font-size: 14px;
     text-align: center;
     padding: 6px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
+
+label {
+    font-size: 13px;
+    text-transform: uppercase;
+}
+input {
+    background-color: rgb(255, 255, 255);
+    border: 1px blue;
+    padding: 3px;
+    border-radius: 3px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border: 2px navy;
+}
+
+input::placeholder {
+    color:antiquewhite
+}
+
+select {
+    background-color: rgb(178, 252, 252);
+    border: 1px whitesmoke;
+    padding: 3px;
+    border-radius: 3px;
+    outline: none;
+    color: aqua;
+
+
+}
+
+
+.botaoSalvar {
+    background-color: rgb(202, 220, 220);
+    color: antiquewhite;
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+
+
+}
+
+.botaoSalvar:hover {
+    background-color: rgb(76, 189, 189);
+    cursor: pointer;
+
+}
+input:focus
+select:focus {
+    color: aquamarine;
+}
+
+#mensagem {
+    display:none;
+    padding: 12px;
+    font-size: 12px;
+    margin-top: 18px;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+#mensagem.erro {
+    display:block;
+    color: rgb(148, 32, 32);
+    background-color: aliceblue;
+    border: 2px solid rgb(148, 32, 32);
+
+}
+
+#mensagem.sucesso {
+    display:block;
+    color:rgb(13, 118, 39);
+    background-color: aliceblue;
+    border: 2px solid rgb(13, 118, 39);
+    
+
 }

@@ -58,4 +58,19 @@ agendamentosSalvos.forEach(function (agendamento) {
 
    
     listaAgendamentos.append(linha);
-});
+})
+
+function excluirAgendamento(id) {
+    const confirmou = confirm("Deseja realmente cancelar esse agendamento?");
+
+    if(confirmou === false) {
+        return;
+        
+    }
+
+    for (let i = 0; i < agendamentosSalvos.length; i++) {
+        if(agendamentosSalvos[i].id === id){
+            
+        }
+    }
+}
