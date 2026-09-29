@@ -71,7 +71,7 @@ li {
 }
  
 li:hover{
-    background-color: rgb(184, 0, 122);
+    background-color: rgb(255, 205, 112);
 }
 
 
@@ -194,7 +194,7 @@ select {
 }
 input:focus,
 select:focus {
-    color: rgb(255, 212, 127);
+    color: rgb(173, 107, 0);
 }
 
 #mensagem {
