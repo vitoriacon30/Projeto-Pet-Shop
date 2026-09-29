@@ -150,7 +150,7 @@ label {
 }
 input {
     background-color: rgb(255, 244, 127);
-    border: 1px rgb(255, 255, 255);
+    border: 1px rgb(255, 181, 106);
     padding: 3px;
     border-radius: 3px;
     outline: none;
@@ -167,7 +167,7 @@ input::placeholder {
 
 select {
     background-color: rgb(255, 255, 136);
-    border: 1px whitesmoke;
+    border: 1px rgb(186, 89, 4);
     padding: 3px;
     border-radius: 3px;
     outline: none;
@@ -178,7 +178,7 @@ select {
 
 
 .botaoSalvar {
-    background-color: rgb(202, 220, 220);
+    background-color: rgb(255, 224, 121);
     color: rgb(0, 0, 0);
     border: none;
     padding: 5px;
